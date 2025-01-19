@@ -61,7 +61,8 @@
                                 class="flex items-center justify-between input input-bordered w-full rounded-2xl bg-zinc-300/90  shadow-xl">
                                 <input type="text" v-model="url" placeholder="ex: https://example.com.br" class="w-full"
                                     @keyup.enter="generateDashboard" />
-                                <button class="" @click="generateDashboard" :disabled="loading">
+                                <button class="" @click="generateDashboard" :disabled="loading" name="generate dashboard">
+                                    <span class="sr-only">generate dashboard</span>
                                     <span v-if="loading" class="loading loading-spinner"></span>
                                     <svg v-else xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
                                         viewBox="0 0 24 24" stroke="grey">
