@@ -1,45 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-Br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crux Dashboard Generator</title>
+    <meta name="author" content="Abraão Morais">
     <meta name="description" content="Gere Crux dashboards de maneira simples, fácil e rápida">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/vue@3.5.13/dist/vue.global.js"></script>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16"  href="/assets/favicon.png">
+    <link rel="icon" type="image/ico" sizes="16x16"  href="/assets/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Crux Dashboard Generator",
+            "url": "https://crux-generator.abraaomorais.com.br/",
+            "description": "Gere Crux dashboards de maneira simples, fácil e rápida",
+            "author": {
+                "@type": "Person", "name": "Abraão Morais"
+            }
+        }
+    </script>
+    <meta name="robots" content="index, follow">
+    </script>
     <style>
-        /* Estilo para a barra de rolagem */
-        ::-webkit-scrollbar {
-            width: 6px;
-            /* Largura da barra vertical */
-            height: 12px;
-            /* Altura da barra horizontal */
-        }
-
-        /* Cor de fundo da track (trilho) */
-        ::-webkit-scrollbar-track {
-            background: black;
-            /* Track preto */
-        }
-
-        /* Cor e estilo do thumb (barra de rolagem) */
-        ::-webkit-scrollbar-thumb {
-            background: blue;
-            /* Azul escuro */
-            border-radius: 6px;
-            /* Deixa as bordas arredondadas */
-        }
-
-        /* Estilo ao passar o mouse sobre o thumb */
-        ::-webkit-scrollbar-thumb:hover {
-            background: #000080;
-            /* Azul mais escuro ao hover */
-        }
+        ::-webkit-scrollbar{width:6px;height:12px}::-webkit-scrollbar-track{background:#000}::-webkit-scrollbar-thumb{background:#00f;border-radius:6px}::-webkit-scrollbar-thumb:hover{background:navy}
     </style>
 </head>
-
 <body class="md:overflow-hidden min-h-screen bg-base-200 font-sans bg-norepeat bg-cover bg-center py-2"
     style="background-image: url('/assets/bg.avif');">
 
@@ -135,7 +127,7 @@
                     </developer>
                 </p>
                 <div class="flex justify-center items-center gap-2">
-                    <a href="https://github.com/AbraaoMorais" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/abraaodev/" target="_blank" rel="noopener noreferrer">
                         <svg width="16" height="16" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M20.3334 9.66666C22.4551 9.66666 24.4899 10.5095 25.9902 12.0098C27.4905 13.5101 28.3334 15.5449 28.3334 17.6667V27H23V17.6667C23 16.9594 22.7191 16.2811 22.219 15.781C21.7189 15.2809 21.0406 15 20.3334 15C19.6261 15 18.9478 15.2809 18.4477 15.781C17.9476 16.2811 17.6667 16.9594 17.6667 17.6667V27H12.3334V17.6667C12.3334 15.5449 13.1762 13.5101 14.6765 12.0098C16.1768 10.5095 18.2116 9.66666 20.3334 9.66666Z"
@@ -147,7 +139,7 @@
                                 stroke="#6AFFC5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </a>
-                    <a href="https://www.linkedin.com/in/abraaodev/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/AbraaoMorais" target="_blank" rel="noopener noreferrer">
                         <svg width="16" height="16" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M12 25.3333C5.33335 27.3333 5.33335 22 2.66669 21.3333M21.3334 29.3333V24.1733C21.3834 23.5375 21.2975 22.8984 21.0814 22.2984C20.8653 21.6984 20.5239 21.1512 20.08 20.6933C24.2667 20.2267 28.6667 18.64 28.6667 11.36C28.6663 9.49843 27.9503 7.70826 26.6667 6.36C27.2745 4.73134 27.2315 2.93113 26.5467 1.33333C26.5467 1.33333 24.9734 0.866665 21.3334 3.30666C18.2774 2.47843 15.056 2.47843 12 3.30666C8.36002 0.866665 6.78669 1.33333 6.78669 1.33333C6.10186 2.93113 6.05888 4.73134 6.66669 6.36C5.37352 7.71826 4.65672 9.52462 4.66669 11.4C4.66669 18.6267 9.06669 20.2133 13.2534 20.7333C12.8147 21.1866 12.4764 21.7272 12.2604 22.3199C12.0445 22.9126 11.9558 23.5441 12 24.1733V29.3333"
@@ -168,12 +160,11 @@
                             </defs>
                             </svg>
                     </a>
-                    
                 </div>
             </div>
         </footer>
     </div>
-
+    <script src="https://unpkg.com/vue@3.5.13/dist/vue.global.js"></script>
     <script>
         const { createApp } = Vue
 
@@ -221,7 +212,6 @@
                         this.loading = false
                         this.url = ''
                     }, 1000)
-
                 }
             }
         }).mount('#app')

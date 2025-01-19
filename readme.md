@@ -1,0 +1,1 @@
+use the command ``npx tailwindcss -i input.css -o output.css --watch´`` to execute tailwindcss.
